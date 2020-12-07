@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/script.js" charset="utf-8"></script>
+        <title>Libreria</title>
+    </head>
+    <body>
+
+        <header>
+
+            <div id="form_container">
+
+                <div class="form_container_top">
+
+                    <div class="item">
+                        <label for="book_title">Titolo</label>
+                        <input type="text" id="book_title" name="" value="" placeholder="Inserisci il titolo del libro">
+                    </div>
+                    <div class="item">
+                        <label for="book_author">Autore</label>
+                        <input type="text" id="book_author" name="" value="" placeholder="Inserisci l'autore del libro">
+                    </div>
+                    <div class="item">
+                        <label for="book_title">Anno</label>
+                        <input type="number" min="0" max="2020" id="book_year" name="" value="" placeholder="Inserisci l'anno di pubblicazione">
+                    </div>
+                    </div>
+
+                <div class="form_container_bottom">
+                    <button type="button" name="button" id="new_book_btn">Aggiungi</button>
+                </div>
+
+            </div>
+
+            <div id="search_author_container">
+                <label for="author_search">Cerca per autore</label>
+                <br>
+                <input type="text" id="author_search" name="" value="" placeholder="Inserisci un autore">
+                <button type="button" name="button" id="search_author_btn">Cerca</button>
+            </div>
+        </header>
+
+        <main>
+            <ul id="own_books"></ul>
+        </main>
+
+
+
+
+
+
+    </body>
+</html>
