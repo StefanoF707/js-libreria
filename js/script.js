@@ -92,7 +92,6 @@ $(document).ready(
 
         const library = $("#own_books");
 
-
         // milestone 2 - aggiungo manualmente un libro all'interno dell'array
         books.push({
             title: "Una stanza piena di gente",
@@ -165,19 +164,12 @@ function showBooks (array, container) {
 
 // Funzione per cercare corrispondenza tra il valore dell'input search e la chiave author dell'array di libri
 function searchAuthorInArray(array, value) {
-    let newArray = [];
 
-    array.forEach( (element) => {
-
-        const {author} = element;
-
-        if (value == author) {
-            newArray.push(element);
-        }
-
+    let filteredArray = array.filter( (element) => {
+        return element.author == value;
     } );
 
-    return newArray;
+    return filteredArray;
 }
 
 // Funzione per aggiungere nuovi libri inseriti dall'utente nel form
